@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.05rem;
@@ -43,10 +47,20 @@ body {
 }
 
 .puesto {
-    margin: 6px 0 24px;
+    margin-top: 6px;
     font-size: 1.2rem;
     font-weight: 300;
     color: #dfeaea;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 12px 0;
+    background-color: #2f5d62;
+    border-top: 1px solid #4a7a7f;
+    box-shadow: 0 2px 6px #c9d3d4;
 }
 
 .menu-lista {
