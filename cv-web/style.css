@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.cabecera {
+    padding: 40px 0 24px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2f5d62;
+}
+
+.nombre {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.enlace-nombre {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.puesto {
+    margin: 6px 0 24px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #dfeaea;
+}
+
+.menu-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu-enlace {
+    padding: 4px 0;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.menu-enlace:hover {
+    border-bottom-color: #ffffff;
+}
+
+
+.con-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 200px;
+    padding: 8px 0;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #c9d3d4;
+    box-shadow: 0 4px 10px #c9d3d4;
+}
+
+.submenu-enlace {
+    display: block;
+    padding: 6px 16px;
+    color: #222222;
+    text-decoration: none;
+    transition: padding-left 0.3s, background-color 0.3s;
+}
+
+.submenu-enlace:hover {
+    background-color: #eef3f3;
+    color: #2f5d62;
+}
+
+.bloque {
+    padding: 50px 0;
+}
+
+.bloque-gray {
+    padding: 50px 0;
+    background-color: #eef3f3;
+}
+
+.titulo-seccion {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #2f5d62;
+}
+
+.texto {
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.enlace {
+    color: #2f5d62;
+    font-weight: 500;
+}
+
+.enlace:hover {
+    text-decoration: none;
+}
+
+
+.contacto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 50px;
+    list-style: none;
+    text-align: center;
+}
+
+.dato-etiqueta {
+    font-weight: 700;
+    color: #2f5d62;
+}
+
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    list-style: none;
+}
+
+.tarjeta {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #c9d3d4;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px #c9d3d4;
+    border-color: #2f5d62;
+}
+
+
+.tarjeta-titulo {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    color: #2f5d62;
+}
+
+.tarjeta-enlace {
+    margin-top: 10px;
+}
+
+
+
+
+.grupos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.grupo-titulo {
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    color: #2f5d62;
+}
+
+.lista-puntos {
+    padding-left: 20px;
+}
+
+.lista-filas {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.fila {
+    padding: 10px 0;
+}
+
+.fila-fecha {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+}
+
+.fila-titulo {
+    font-size: 1.05rem;
+}
+
+.pie {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #2f5d62;
+}
+
+.enlace-pie {
+    color: #ffffff;
+}
+
+@media (min-width: 700px) {
+    .con-submenu:hover .submenu {
+        display: block;
+    }
+
+    .nombre {
+        font-size: 3.4rem;
+    }
+
+    .tarjetas-dos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tarjetas-tres {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+   .grupos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .fila {
+        display: flex;
+        gap: 24px;
+    }
+
+    .fila-fecha {
+        width: 170px;
+    }
+
+    .fila-texto {
+        flex: 1;
+    }
+}
+
